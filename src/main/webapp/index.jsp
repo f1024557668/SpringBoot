@@ -4,5 +4,6 @@
 <body>
 	用户名：${message }<br/>
 	<a href="/home">home</a>
+	<a href="/query">query</a>
 </body>
 </html>

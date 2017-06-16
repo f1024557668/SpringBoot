@@ -1,1 +1,16 @@
-cn\itcast\springboot\App.class
+cn\itcast\springboot\exception\GlobalDefaultExceptionHandler.class
+cn\itcast\springboot\service\MyUserDetailsService.class
+cn\itcast\springboot\Application.class
+cn\itcast\springboot\conf\SecurityConfig.class
+cn\itcast\springboot\conf\TomcatConfig.class
+cn\itcast\springboot\conf\MyFilterSecurityInterceptor.class
+cn\itcast\springboot\controller\HelloController.class
+cn\itcast\springboot\elasticsearch\service\ArticleSearchRepository.class
+cn\itcast\springboot\right\CustomWebSecurityExpressionHandler.class
+cn\itcast\springboot\elasticsearch\model\Author.class
+cn\itcast\springboot\right\MyPermissionEvaluator.class
+cn\itcast\springboot\conf\MyAccessDecisionManager.class
+cn\itcast\springboot\conf\WEBMessageConvert.class
+cn\itcast\springboot\elasticsearch\model\Article.class
+cn\itcast\springboot\elasticsearch\model\Tutorial.class
+cn\itcast\springboot\model\User.class
