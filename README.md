@@ -5,4 +5,4 @@
 2. 运行Application类时在jvm options参数上配置-Dspring.profiles.active=dev来指定程序启动时是加载application-dev配置。
 此项目为SpringBoot+Spring Security+内置的tomcat+本地的elasticsearch为基础组合的可供开发的环境。
 
-后续会陆续集成Spring Data等模块以及连接mysql数据库
+2017-06-16：项目中加入了Spring-data-mongodb模块，并实现了一个新增和查询的功能。
