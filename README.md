@@ -6,3 +6,5 @@
 此项目为SpringBoot+Spring Security+内置的tomcat+本地的elasticsearch为基础组合的可供开发的环境。
 
 2017-06-16：项目中加入了Spring-data-mongodb模块，并实现了一个新增和查询的功能。
+
+2017-08-14：项目中加入SpringBatch组件的集成，并基于batch模拟一个批处理的demo例子——Person导入。
