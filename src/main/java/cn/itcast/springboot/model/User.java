@@ -2,10 +2,9 @@ package cn.itcast.springboot.model;
 
 /**
  * 系统用户
- *
+ * 
  */
 public class User {
-
 	private String username;
 
 	private String password;

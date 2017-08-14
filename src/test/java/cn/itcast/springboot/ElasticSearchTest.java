@@ -1,8 +1,15 @@
 package cn.itcast.springboot;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 
+import org.elasticsearch.action.admin.indices.analyze.AnalyzeRequestBuilder;
+import org.elasticsearch.client.IndicesAdminClient;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.query.QueryStringQueryBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -58,5 +65,16 @@ public class ElasticSearchTest {
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
+	}
+
+	@Test
+	public void testTokenizer() throws UnknownHostException {
+//		IndicesAdminClient indicesAdminClient = TransportClient.builder().build().addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("127.0.0.1"), 9300)).admin().indices();
+//		AnalyzeRequestBuilder request = new AnalyzeRequestBuilder(indicesAdminClient,"cloud_repair","中华人民共和国国歌");
+// request.setAnalyzer("ik");
+//		request.setTokenizer("ik");
+// Analyzer（分析器）、Tokenizer（分词器）
+//		List listAnalysis = request.execute().actionGet().getTokens();
+//		System.out.println(listAnalysis);
 	}
 }
