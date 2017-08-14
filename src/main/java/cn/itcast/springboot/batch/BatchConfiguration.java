@@ -31,6 +31,7 @@ public class BatchConfiguration {
 	@Autowired
 	private StepBuilderFactory stepBuilderFactory;
 
+	// 默认用户没有自定义数据源时，boot默认是HSQLDB
 	@Autowired
 	public DataSource dataSource;
 
@@ -40,16 +41,13 @@ public class BatchConfiguration {
 		FlatFileItemReader<Person> reader = new FlatFileItemReader<Person>();
 		reader.setResource(new ClassPathResource("sample-data.csv"));
 		reader.setLineMapper(new DefaultLineMapper<Person>() {
-
 			{
 				setLineTokenizer(new DelimitedLineTokenizer() {
-
 					{
 						setNames(new String[] { "firstName", "lastName" });
 					}
 				});
 				setFieldSetMapper(new BeanWrapperFieldSetMapper<Person>() {
-
 					{
 						setTargetType(Person.class);
 					}
